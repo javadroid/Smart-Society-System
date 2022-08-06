@@ -1,0 +1,19 @@
+GET http://localhost:3000/api/causeofcrime
+###
+POST  http://localhost:3000/api/causeofcrime
+Content-Type: application/json
+
+{"name":"emmy"}
+
+###
+
+GET  http://localhost:3000/api/causeofcrime/62ee84f09b59165695073519
+
+###
+
+POST  http://localhost:3000/api/causeofcrime/62ee84f09b59165695073519
+Content-Type: application/json
+
+{"name":"say"}
+###
+DELETE http://localhost:3000/api/causeofcrime/62ee84f09b59165695073519
