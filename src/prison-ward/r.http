@@ -1,0 +1,19 @@
+GET http://localhost:3000/api/prisonward
+###
+POST  http://localhost:3000/api/prisonward
+Content-Type: application/json
+
+{"name":"emmy"}
+
+###
+
+GET  http://localhost:3000/api/prisonward/62f0352acd3799ff82be8599
+
+###
+
+PATCH   http://localhost:3000/api/prisonward/62f0352acd3799ff82be8599
+Content-Type: application/json
+
+{"name":"say"}
+###
+DELETE http://localhost:3000/api/prisonward/62f0352acd3799ff82be8599
