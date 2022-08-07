@@ -7,11 +7,11 @@ Content-Type: application/json
 
 ###
 
-GET  http://localhost:3000/api/causeofcrime/62ee84f09b59165695073519
+GET  http://localhost:3000/api/causeofcrime/62ee85789b59165695073526
 
 ###
 
-POST  http://localhost:3000/api/causeofcrime/62ee84f09b59165695073519
+PATCH   http://localhost:3000/api/causeofcrime/62ee85789b59165695073526
 Content-Type: application/json
 
 {"name":"say"}
