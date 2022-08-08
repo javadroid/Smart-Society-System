@@ -12,11 +12,11 @@ import {
   
   @Controller('correctioncenters')
   export class CorrectionCentersController {
-    constructor(private CorrectionCenterService: CorrectionCentersService) {}
+    constructor(private correctionCenterService: CorrectionCentersService) {}
   
     @Post()
     async create(@Body() createDto: CreateCorrectionCentersDTO) {
-      return this.CorrectionCenterService.create(createDto);
+      return this.correctionCenterService.create(createDto);
     }
   
     @Patch(':_id')
@@ -24,22 +24,22 @@ import {
       @Param('_id') _Id: string,
       @Body() updated: CreateCorrectionCentersDTO,
     ) {
-      return this.CorrectionCenterService.update(_Id, updated);
+      return this.correctionCenterService.update(_Id, updated);
     }
   
     @Get()
     async findAll() {
-      return this.CorrectionCenterService.findAll();
+      return this.correctionCenterService.findAll();
     }
   
     @Get(':_id')
     async findOne(@Param('_id') _id: string) {
-      return this.CorrectionCenterService.findById(_id);
+      return this.correctionCenterService.findById(_id);
     }
   
     @Delete(':_id')
     async delete(@Param('_id') _id: string) {
-      return this.CorrectionCenterService.delete(_id);
+      return this.correctionCenterService.delete(_id);
     }
   }
   

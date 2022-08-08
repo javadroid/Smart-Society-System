@@ -9,7 +9,7 @@ export class CorrectionCenters {
   @Prop()
   name: string;
   @Prop()
-  prisontype: string;
+  prisonType: string;
 
 }
 
