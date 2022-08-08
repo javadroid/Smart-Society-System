@@ -12,7 +12,7 @@ import { CreatePrisonWardDTO } from './DTO/PrisonWardDTO';
 
 @Controller('prisonward')
 export class PrisonWardController {
-  constructor(private prisonWardService: PrisonWardService) {}
+  constructor(private prisonWardService: PrisonWardService) { }
 
   @Post()
   async create(@Body() createDto: CreatePrisonWardDTO) {

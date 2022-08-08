@@ -9,7 +9,7 @@ export class CorrectionCentersService {
   constructor(
     @InjectModel(CorrectionCenters.name)
     private correctionCentersModel: Model<CorrectionCentersDoc>,
-  ) {}
+  ) { }
   //Model to create a project... to be called in the controller
   async create(createDto: CreateCorrectionCentersDTO) {
     return await this.correctionCentersModel.create(createDto);

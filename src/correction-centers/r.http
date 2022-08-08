@@ -3,7 +3,7 @@ GET http://localhost:3000/api/correctioncenters
 POST  http://localhost:3000/api/correctioncenters
 Content-Type: application/json
 
-{"name":"emmy"}
+{"name":"danny"}
 
 ###
 
@@ -11,9 +11,9 @@ GET  http://localhost:3000/api/correctioncenters/62f0e54eccc817e0747789dd
 
 ###
 
-PATCH   http://localhost:3000/api/correctioncenters/62f0e54eccc817e0747789dd
+PATCH   http://localhost:3000/api/correctioncenters/62f0fd79db392ea0356d21f5
 Content-Type: application/json
 
-{"name":"say"}
+{"name":"may"}
 ###
-DELETE http://localhost:3000/api/causeofcrime/62ee84f09b59165695073519
+DELETE http://localhost:3000/api/correctioncenters/62f0fd79db392ea0356d21f5

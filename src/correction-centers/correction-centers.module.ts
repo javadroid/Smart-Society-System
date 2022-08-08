@@ -13,4 +13,4 @@ import { CorrectionCenters, CorrectionCentersSchema } from './schema/schema';
   controllers: [CorrectionCentersController],
   providers: [CorrectionCentersService],
 })
-export class CorrectionCentersModule {}
+export class CorrectionCentersModule { }

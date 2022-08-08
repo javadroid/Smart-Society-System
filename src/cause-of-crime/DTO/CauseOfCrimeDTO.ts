@@ -1,4 +1,4 @@
 /* eslint-disable prettier/prettier */
-export class CreateCauseOfCrimeDTO{
+export class CreateCauseOfCrimeDTO {
   name: string;
 }

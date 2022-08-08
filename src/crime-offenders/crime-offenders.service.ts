@@ -9,7 +9,7 @@ export class CrimeOffendersService {
   constructor(
     @InjectModel(CrimeOffenders.name)
     private CrimeOffendersModel: Model<CrimeOffendersDoc>,
-  ) {}
+  ) { }
   //Model to create a project... to be called in the controller
   async create(createDto: CreateCrimeOffendersDTO) {
     return await this.CrimeOffendersModel.create(createDto);

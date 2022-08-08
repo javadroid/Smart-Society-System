@@ -1,0 +1,19 @@
+GET http://localhost:3000/api/crimes
+###
+POST  http://localhost:3000/api/crimes
+Content-Type: application/json
+
+{"name":"danny"}
+
+###
+
+GET  http://localhost:3000/api/crimes/62f106a5db392ea0356d2210
+
+###
+
+PATCH   http://localhost:3000/api/crimes/62f101a2db392ea0356d2201
+Content-Type: application/json
+
+{"name":"may"}
+###
+DELETE http://localhost:3000/api/crimes/62f106b2db392ea0356d2213

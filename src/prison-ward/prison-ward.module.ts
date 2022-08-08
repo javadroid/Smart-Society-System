@@ -13,4 +13,4 @@ import { PrisonWard, PrisonWardSchema } from './schema/schema';
   controllers: [PrisonWardController],
   providers: [PrisonWardService],
 })
-export class PrisonWardModule {}
+export class PrisonWardModule { }
