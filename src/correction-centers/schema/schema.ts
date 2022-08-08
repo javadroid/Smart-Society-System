@@ -10,7 +10,10 @@ export class CorrectionCenters {
   name: string;
   @Prop()
   prisonType: string;
+<<<<<<< HEAD
 
+=======
+>>>>>>> cda755570c0d2e4607ffbcb442444275b3b02046
 }
 
 export const CorrectionCentersSchema = SchemaFactory.createForClass(CorrectionCenters);
