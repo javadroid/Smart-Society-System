@@ -9,8 +9,7 @@ export class CorrectionCenters {
   @Prop()
   name: string;
   @Prop()
-  prisontype: string;
-
+  prisonType: string;
 }
 
 export const CorrectionCentersSchema = SchemaFactory.createForClass(CorrectionCenters);
