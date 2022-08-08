@@ -3,7 +3,7 @@ GET http://localhost:3000/api/prisonward
 POST  http://localhost:3000/api/prisonward
 Content-Type: application/json
 
-{"name":"emmy"}
+{"name":"emma"}
 
 ###
 

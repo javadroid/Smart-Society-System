@@ -8,8 +8,6 @@ export type CauseOfCrimeDoc = CauseOfCrime & Document;
 export class CauseOfCrime {
   @Prop()
   name: string;
-
-  
 }
 
 export const CauseOfCrimeSchema = SchemaFactory.createForClass(CauseOfCrime);
