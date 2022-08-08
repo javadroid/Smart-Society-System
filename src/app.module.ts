@@ -8,7 +8,9 @@ import { CrimeOffendersModule } from './crime-offenders/crime-offenders.module';
 import { PrisonWardModule } from './prison-ward/prison-ward.module';
 import { CorrectionCentersModule } from './correction-centers/correction-centers.module';
 import { CrimesModule } from './crimes/crimes.module';
-
+import { BaseEntityModule } from './base-entity/base-entity.module';
+import { CourtChargeModule } from './court-charge/court-charge.module';
+import { OffencesModule } from './offences/offences.module';
 
 @Module({
   imports: [
@@ -17,7 +19,10 @@ import { CrimesModule } from './crimes/crimes.module';
     PrisonWardModule,
     CrimeOffendersModule,
     CorrectionCentersModule,
-    CrimesModule
+    CrimesModule,
+    BaseEntityModule,
+    CourtChargeModule,
+    OffencesModule
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -8,7 +8,16 @@ export type BaseEntityDoc = BaseEntity & Document;
 export class BaseEntity {
   @Prop()
   createdById: string;
-  static createdById: any;
+
+  @Prop()
+  createdAt: Date;
+
+  @Prop()
+  modifyById: string;
+
+  @Prop()
+  modifiedAt: Date;
+  
 }
 
 export const BaseEntitySchema = SchemaFactory.createForClass(BaseEntity);
