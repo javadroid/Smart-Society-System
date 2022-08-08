@@ -10,7 +10,7 @@ import {
   import { BaseEntityService } from './base-entity.service';
   import { CreateBaseEntityDTO } from './DTO/BaseEntityDTO';
   
-  @Controller('causeofcrime')
+  @Controller('baseentity')
   export class BaseEntiyController {
     constructor(private baseEntityService: BaseEntityService) {}
   
