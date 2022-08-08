@@ -6,10 +6,11 @@ import { AppService } from './app.service';
 import { CauseOfCrimeModule } from './cause-of-crime/cause-of-crime.module';
 import { CrimeOffendersModule } from './crime-offenders/crime-offenders.module';
 import { PrisonWardModule } from './prison-ward/prison-ward.module';
+import { CorrectionCentersModule } from './correction-centers/correction-centers.module';
 
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://localhost/Smart-Society-System'),CauseOfCrimeModule, PrisonWardModule, CrimeOffendersModule],
+  imports: [MongooseModule.forRoot('mongodb://localhost/Smart-Society-System'),CauseOfCrimeModule, PrisonWardModule, CrimeOffendersModule, CorrectionCentersModule],
   controllers: [AppController],
   providers: [AppService],
 })

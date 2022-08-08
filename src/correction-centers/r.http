@@ -7,11 +7,11 @@ Content-Type: application/json
 
 ###
 
-GET  http://localhost:3000/api/causeofcrime/62ee85789b59165695073526
+GET  http://localhost:3000/api/correctioncenters/62f0e54eccc817e0747789dd
 
 ###
 
-PATCH   http://localhost:3000/api/causeofcrime/62ee85789b59165695073526
+PATCH   http://localhost:3000/api/correctioncenters/62f0e54eccc817e0747789dd
 Content-Type: application/json
 
 {"name":"say"}
