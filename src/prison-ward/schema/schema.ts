@@ -2,12 +2,14 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
-export type CauseOfCrimeDoc = CauseOfCrime & Document;
+export type PrisonWardDoc = PrisonWard & Document;
 
 @Schema()
-export class CauseOfCrime {
+export class PrisonWard {
   @Prop()
+
   name: string;
+
 }
 
-export const CauseOfCrimeSchema = SchemaFactory.createForClass(CauseOfCrime);
+export const PrisonWardSchema = SchemaFactory.createForClass(PrisonWard);

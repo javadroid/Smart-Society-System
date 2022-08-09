@@ -1,0 +1,23 @@
+GET http://localhost:3000/api/correctioncenters
+###
+POST  http://localhost:3000/api/correctioncenters
+Content-Type: application/json
+
+{
+    "name":"danny",
+    "prisonType": "round"
+    
+}
+
+###
+
+GET  http://localhost:3000/api/correctioncenters/62f0e54eccc817e0747789dd
+
+###
+
+PATCH   http://localhost:3000/api/correctioncenters/62f1211f47979679c124a46d
+Content-Type: application/json
+
+{"name":"may"}
+###
+DELETE http://localhost:3000/api/correctioncenters/62f1211f47979679c124a46d

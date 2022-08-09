@@ -1,0 +1,26 @@
+GET http://localhost:3000/api/crimes
+###
+POST  http://localhost:3000/api/crimes
+Content-Type: application/json
+
+{
+    "crimeIdentificationNo": "20",
+    "crimeName": "Kidnapping",
+
+}
+
+
+###
+
+GET  http://localhost:3000/api/crimes/62f1127b47979679c124a450
+
+###
+
+PATCH   http://localhost:3000/api/crimes/62f113ba47979679c124a45b
+Content-Type: application/json
+
+{
+    "crimeName":"Stealing"
+}
+###
+DELETE http://localhost:3000/api/crimes/62f113ba47979679c124a45b
