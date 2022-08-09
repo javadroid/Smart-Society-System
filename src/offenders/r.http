@@ -1,0 +1,19 @@
+GET http://localhost:3000/api/offenders
+###
+POST  http://localhost:3000/api/offenders
+Content-Type: application/json
+
+{"name":"emmy"}
+
+###
+
+GET  http://localhost:3000/api/offenders/62ee85789b59165695073526
+
+###
+
+PATCH   http://localhost:3000/api/offenders/62ee85789b59165695073526
+Content-Type: application/json
+
+{"name":"say"}
+###
+DELETE http://localhost:3000/api/offenders/62ee84f09b59165695073519
