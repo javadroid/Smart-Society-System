@@ -1,0 +1,31 @@
+GET http://localhost:3000/api/baseentity
+###
+POST  http://localhost:3000/api/baseentity
+Content-Type: application/json
+
+{
+    "createdById":"Emma",
+    "createdAt":"2022-07-15",
+    "modifyById": "Jam",
+    "modifiedAt": "2022-08-15",
+}
+
+###
+
+GET  http://localhost:3000/api/baseentity/62f1114647979679c124a438
+
+###
+
+PATCH   http://localhost:3000/api/baseentity/62f121c947979679c124a475
+Content-Type: application/json
+
+{
+
+    "createdById":"say",
+    "modifyById": "William",
+    "createdAt":"2022-07-15",
+    "modifiedAt": "2022-08-15"
+
+}
+###
+DELETE http://localhost:3000/api/baseentity/62f1114647979679c124a438

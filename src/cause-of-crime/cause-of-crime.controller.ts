@@ -12,7 +12,7 @@ import { CreateCauseOfCrimeDTO } from './DTO/CauseOfCrimeDTO';
 
 @Controller('causeofcrime')
 export class CauseOfCrimeController {
-  constructor(private causeOfCrimeService: CauseOfCrimeService) {}
+  constructor(private causeOfCrimeService: CauseOfCrimeService) { }
 
   @Post()
   async create(@Body() createDto: CreateCauseOfCrimeDTO) {

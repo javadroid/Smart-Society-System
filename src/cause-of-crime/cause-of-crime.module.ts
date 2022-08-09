@@ -13,4 +13,4 @@ import { CauseOfCrime, CauseOfCrimeSchema } from './schema/schema';
   controllers: [CauseOfCrimeController],
   providers: [CauseOfCrimeService],
 })
-export class CauseOfCrimeModule {}
+export class CauseOfCrimeModule { }

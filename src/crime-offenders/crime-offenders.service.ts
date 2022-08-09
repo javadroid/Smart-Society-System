@@ -1,23 +1,23 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { CreateCauseOfCrimeDTO } from './DTO/CauseOfCrimeDTO';
-import { CauseOfCrime, CauseOfCrimeDoc } from './schema/schema';
+import { CreateCrimeOffendersDTO } from './DTO/CrimeOffendersDTO';
+import { CrimeOffenders, CrimeOffendersDoc } from './schema/schema';
 import { Model } from 'mongoose';
 
 @Injectable()
-export class CauseOfCrimeService {
+export class CrimeOffendersService {
   constructor(
-    @InjectModel(CauseOfCrime.name)
-    private CauseOfCrimeModel: Model<CauseOfCrimeDoc>,
+    @InjectModel(CrimeOffenders.name)
+    private CrimeOffendersModel: Model<CrimeOffendersDoc>,
   ) { }
   //Model to create a project... to be called in the controller
-  async create(createDto: CreateCauseOfCrimeDTO) {
-    return await this.CauseOfCrimeModel.create(createDto);
+  async create(createDto: CreateCrimeOffendersDTO) {
+    return await this.CrimeOffendersModel.create(createDto);
   }
 
   //Model to update a project.. to be called in the controller
-  async update(_id: string, updated: CreateCauseOfCrimeDTO) {
-    const check = this.CauseOfCrimeModel.findByIdAndUpdate({ _id }, updated);
+  async update(_id: string, updated: CreateCrimeOffendersDTO) {
+    const check = this.CrimeOffendersModel.findByIdAndUpdate({ _id }, updated);
     if (!check) {
       throw new NotFoundException('project not found');
     }
@@ -25,7 +25,7 @@ export class CauseOfCrimeService {
   }
   //Model to find a project... to be called in the controller
   async findById(_Id: string) {
-    const check = this.CauseOfCrimeModel.find({ _id: _Id }).exec();
+    const check = this.CrimeOffendersModel.find({ _id: _Id }).exec();
     if (!check) {
       throw new NotFoundException('project not found');
     }
@@ -34,12 +34,12 @@ export class CauseOfCrimeService {
 
   //Model to find all project... to be called in the controller
   async findAll() {
-    return this.CauseOfCrimeModel.find({}).exec();
+    return this.CrimeOffendersModel.find({}).exec();
   }
 
   //Model to delete a project... to be called in the controller
   async delete(_id) {
-    const check = await this.CauseOfCrimeModel.findByIdAndRemove({
+    const check = await this.CrimeOffendersModel.findByIdAndRemove({
       _id: Object(_id),
     }).exec();
     if (!check) {

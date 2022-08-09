@@ -1,0 +1,31 @@
+GET http://localhost:3000/api/courtcharge
+###
+POST  http://localhost:3000/api/courtcharge
+Content-Type: application/json
+
+{
+    "crimeOffendersId":"24",
+    "courtRulling": "not guilty",
+    "Penalty":"Manual labour",
+    "courtName": "Rivers State court",
+    "courtJudge": "Judge Kenny",
+    "offenderLawyer": "lawyer James"
+    
+}
+
+###
+
+GET  http://localhost:3000/api/courtcharge/62f180e1eea07670426503d6
+
+###
+
+PATCH   http://localhost:3000/api/courtcharge/62f180e1eea07670426503d6
+Content-Type: application/json
+
+{
+    "crimeOffendersId":"24",
+    "courtRulling": "not guilty",
+    "Penalty":"fine"
+}
+###
+DELETE http://localhost:3000/api/courtcharge/62f180e1eea07670426503d6
