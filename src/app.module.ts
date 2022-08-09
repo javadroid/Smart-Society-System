@@ -16,7 +16,7 @@ import { PrisonWardModule } from './prison-ward/prison-ward.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/Timeline'),
+    MongooseModule.forRoot('mongodb://localhost/Smart-Society-System'),
     BaseEntityModule,
     CauseOfCrimeModule,
     CorrectionCentersModule,
