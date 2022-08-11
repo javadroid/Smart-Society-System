@@ -13,6 +13,7 @@ import { OffencesModule } from './offences/offences.module';
 import { OffendersModule } from './offenders/offenders.module';
 import { PrisonModule } from './prison/prison.module';
 import { PrisonWardModule } from './prison-ward/prison-ward.module';
+import { BailModule } from './Bail/bail.module';
 
 @Module({
   imports: [
@@ -26,7 +27,8 @@ import { PrisonWardModule } from './prison-ward/prison-ward.module';
     OffencesModule,
     OffendersModule,
     PrisonModule,
-    PrisonWardModule
+    PrisonWardModule,
+    BailModule
   ],
   controllers: [AppController],
   providers: [AppService],

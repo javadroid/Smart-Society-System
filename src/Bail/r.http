@@ -1,0 +1,36 @@
+GET http://localhost:3000/api/bail
+###
+POST  http://localhost:3000/api/bail
+Content-Type: application/json
+
+{
+    "crimeOffendersId":"1",
+    "bailDate":"2022-07-15",
+    "bailerName": "Jammy",
+    "bailerPhoneNumber": "08033022880",
+    "bailerAdress": "Clover Lane Pearl Garden Estate",
+    "bailerEmail": "Jammy@gmail.com",
+    "bailBond": "Fine shouldn't be paid"
+}
+
+###
+
+GET  http://localhost:3000/api/bail/62f1114647979679c124a438
+
+###
+
+PATCH   http://localhost:3000/api/bail/62f4c922051f4642b8e6123a
+Content-Type: application/json
+
+{
+
+    "crimeOffendersId":"1",
+    "bailDate":"2022-07-15",
+    "bailerName": "James",
+    "bailerPhoneNumber": "08033022880",
+    "bailerAdress": "Aster Lane Pearl Garden Estate",
+    "bailerEmail": "James@gmail.com"
+
+}
+###
+DELETE http://localhost:3000/api/bail/62f4c8ef0ae155dc5eb0d68b
