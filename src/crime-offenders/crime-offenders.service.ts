@@ -32,6 +32,14 @@ export class CrimeOffendersService {
     return check;
   }
 
+  async findByoffenderIdentificationNo(_Id: string) {
+    const check = this.CrimeOffendersModel.find({offenderIdentificationNo: _Id }).exec();
+    if (!check) {
+      throw new NotFoundException('project not found');
+    }
+    return check;
+  }
+
   //Model to find all project... to be called in the controller
   async findAll() {
     return this.CrimeOffendersModel.find({}).exec();

@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 export class CreateOffendersDTO {
-  offenderIdentificationNO: string;
+  offenderIdentificationNo: string;
   offencesId:string
   offenderName:string
   offenderEmail:string
