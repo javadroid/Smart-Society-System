@@ -8,7 +8,7 @@ export type BailDoc = Bail & Document;
 @Schema()
 export class Bail {
   @Prop()
-  crimeOffendersId: number;
+  crimeOffendersId: string;
 
   @Prop()
   bailDate: Date;
@@ -17,7 +17,7 @@ export class Bail {
   bailerName: string;
 
   @Prop()
-  bailerPhoneNumber: Number;
+  bailerPhoneNumber: number;
 
   @Prop()
   bailerAdress: string;

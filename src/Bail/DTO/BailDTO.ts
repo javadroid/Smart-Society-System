@@ -1,9 +1,9 @@
 /* eslint-disable prettier/prettier */
 export class CreateBailDTO {
-    crimeOffendersId: number;
+    crimeOffendersId: string;
     bailDate: Date;
     bailerName: string;
-    bailerPhoneNumber: Number;
+    bailerPhoneNumber: number;
     bailerAdress: string;
     bailerEmail: string;
     bailBond: string;
