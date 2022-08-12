@@ -5,7 +5,7 @@ export class CreateCourtChargeDTO {
   chargeTime: Timestamp;
   crimeOffendersId: string;
   courtRulling: string;
-  Penalty: string;
+  penalty: string;
   courtName: string;
   courtJudge: string;
   offenderLawyer: string;
