@@ -2,7 +2,7 @@ import { Timestamp } from "mongodb";
 
 /* eslint-disable prettier/prettier */
 export class CreateCrimeOffendersDTO {
-  offenderIdentificationNo: number;
+  offenderIdentificationNo: string;
   offenceId: string;
   crimeId: string;
   agentId: string;

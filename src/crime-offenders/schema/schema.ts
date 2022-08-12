@@ -8,7 +8,7 @@ export type CrimeOffendersDoc = CrimeOffenders & Document;
 @Schema()
 export class CrimeOffenders {
   @Prop()
-  offenderIdentificationNo: number;
+  offenderIdentificationNo: string;
 
   @Prop()
   offenceId: string;
