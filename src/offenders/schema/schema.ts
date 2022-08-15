@@ -9,33 +9,34 @@ export class Offenders {
   @Prop()
   offenderIdentificationNO: string;
   @Prop()
-  offencesId:string
+  offencesId:string;
   @Prop()
-  offenderName:string
+  offenderName:string;
   @Prop()
-  offenderEmail:string
+  offenderEmail:string;
   @Prop()
-  offenderNextOfKing:string
+  offenderNextOfKin:string;
   @Prop()
-  offenderDescription:string
+  offenderDescription:string;
   @Prop()
-  offenderAddress:string
+  offenderAddress:string;
   @Prop()
-  offenderCountry:string
+  offenderStateOfOrigin:string;
   @Prop()
-  offenderBiometrics:string
+  offenderCountry:string;
   @Prop()
-  offenderPicture:string
+  offenderBiometrics:string;
   @Prop()
-  offenderLga:string
+  offenderPicture:string;
   @Prop()
-  offenderDateOfBirth:string
+  offenderLga:string;
   @Prop()
-  offenderGender:string
+  offenderDateOfBirth:string;
   @Prop()
-  offenderType:string
+  offenderGender:string;
+  @Prop()
+  offenderType:string;
 
-  
 }
 
 export const OffendersSchema = SchemaFactory.createForClass(Offenders);
