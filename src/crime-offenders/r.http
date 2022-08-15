@@ -3,11 +3,22 @@ GET http://localhost:3000/api/crimeOffenders
 POST  http://localhost:3000/api/crimeOffenders
 Content-Type: application/json
 
-{"name":"emmy"}
+{
+    "offenderIdentificationNo":"sdad",
+    "statementOfOffence":"aasdd",
+    "incidentDependencies": "Mercy",
+    "status": "asas"
+}
 
 ###
 
 GET  http://localhost:3000/api/crimeOffenders/62f0da024892f3a7bbf65f10
+
+###
+
+
+
+GET  http://localhost:3000/api/crimeOffenders/offender/sdad
 
 ###
 
@@ -16,4 +27,4 @@ Content-Type: application/json
 
 {"name":"say"}
 ###
-DELETE http://localhost:3000/api/crimeOffenders/62f0da024892f3a7bbf65f10
+DELETE http://localhost:3000/api/crimeOffenders/62f643f8e24874116da7ea5e
