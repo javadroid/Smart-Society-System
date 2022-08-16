@@ -1,0 +1,71 @@
+GET http://localhost:3000/api/users
+
+
+###
+GET http://localhost:3000/api/users/email/ochigboemmanuel32@gmail.com
+
+###
+GET http://localhost:3000/api/users/id/62fa40cdcf701ce1d83f2cf1
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+
+{
+"username":"javadroidew",
+
+   "password":"string223@"
+}
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+"username":"javadddsdssxdsxroid232dsxsd",
+   "personnelType":"texad",
+   "phonenumber":522312023332123,
+   "email":"string@wgsmxxadddsxfdssddil.csdaodm1",
+   "gender":"male",
+   "address":"address string",
+   "image":" image string"   ,
+   "password":"string223@"
+}
+
+###
+DELETE http://localhost:3000/api/users/62c5727d797040267eb8e655
+
+=
+###
+GET http://localhost:3000/api/users/string@ggermail.com
+
+###
+PATCH http://localhost:3000/api/users/62c2c09acc6cef6a68cf0c68
+Content-Type: application/json
+
+{
+"username":"rf5f",
+   "personnelType":"tegread",
+   "phonenumber":5,
+   "email":"string@ggermail.com",
+   "gender":"mgergale",
+   "address":"addrgeress string",
+   "image":" imaggrege string"   ,
+   "password":"sterring223@"
+}
+
+###
+PUT  http://localhost:3000/api/users/62c2c09acc6cef6a68cf0c68
+Content-Type: application/json
+
+{
+"username":"javadrodfid",
+   "personnelType":"tegread",
+   "phonenumber":5322,
+   "email":"string@ggermail.com",
+   "gender":"mgergale",
+   "address":"addrgeress string",
+   "image":" imaggrege string"   ,
+   "password":"sterring223@"
+}
