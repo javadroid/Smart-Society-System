@@ -4,7 +4,7 @@ POST  http://localhost:3000/api/crimeOffenders
 Content-Type: application/json
 
 {
-    "offenderIdentificationNo":"ss1",
+    "offenderIdentificationNo":"sdad",
     "statementOfOffence":"aasdd",
     "incidentDependencies": "Mercy",
     "status": "asas"
@@ -18,7 +18,7 @@ GET  http://localhost:3000/api/crimeOffenders/62f0da024892f3a7bbf65f10
 
 
 
-GET  http://localhost:3000/api/crimeOffenders/offender/ss1
+GET  http://localhost:3000/api/crimeOffenders/offender/sdad
 
 ###
 

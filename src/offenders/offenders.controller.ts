@@ -34,6 +34,11 @@ export class OffendersController {
     return this.causeOfCrimeService.findById(_id);
   }
 
+  @Get('searchByIdentificationNo/:_id')
+  async searchByIdentificationNo(@Param('_id') _id: string) {
+    return this.causeOfCrimeService.searchByIdentificationNo(_id);
+  }
+
   @Delete(':_id')
   async delete(@Param('_id') _id: string) {
     return this.causeOfCrimeService.delete(_id);

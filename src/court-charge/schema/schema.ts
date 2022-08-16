@@ -18,7 +18,7 @@ export class CourtCharge {
     courtRulling: string;
 
     @Prop()
-    Penalty: string;
+    penalty: string;
 
     @Prop()
     courtName: string;
